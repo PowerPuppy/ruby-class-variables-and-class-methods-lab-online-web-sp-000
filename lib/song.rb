@@ -28,8 +28,15 @@ end
 
 def self.genre_count
   genre_hash = {}
-  self.genres.each {|genre| genre_hash[genre]= @@genre.count(genre)}
+  self.genres.each {|genre| genre_hash[genre]= @@genres.count(genre)}
   genre_hash
 end
+
+def self.artist_count
+   artists_hash = {}
+   artist_list = self.artists
+   artist_list.each {|artist| artists_hash[artist] = @@artists.count(artist) }
+   artists_hash
+ end
 
 end
