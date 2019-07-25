@@ -7,7 +7,7 @@ def initialize(name, artis, genre)
   song_count =+1
 end
 
-def name
+def self.name
   @name
 end
 
