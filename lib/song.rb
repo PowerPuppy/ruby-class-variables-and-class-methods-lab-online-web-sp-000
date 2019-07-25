@@ -26,4 +26,9 @@ def self.genres
   @@genres.uniq
 end
 
+def self.genre_count
+  genre_hash = {}
+  self.genre.each {|genre| genre_hash[genre]= @@genre.count(genre)}
+end
+
 end
